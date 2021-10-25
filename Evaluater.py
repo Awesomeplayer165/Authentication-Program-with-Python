@@ -15,7 +15,8 @@ class Evaluater:
 	def hasNumbers(self) -> bool:
 		for char in self.password:
 			try:    int(char); return True
-			except: pass
+			except: continue
+			
 		return False
 
 	@property
